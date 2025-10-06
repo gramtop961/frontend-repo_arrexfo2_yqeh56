@@ -5,7 +5,7 @@ import Signup from './components/Signup';
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-white text-black">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-blue-950 via-blue-950 to-slate-950 text-white">
       <Navbar />
       <main className="flex-1">
         <Hero />
