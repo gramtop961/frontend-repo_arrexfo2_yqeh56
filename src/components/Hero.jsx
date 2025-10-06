@@ -1,14 +1,11 @@
-import Spline from '@splinetool/react-spline';
 import { Rocket } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[70vh] grid place-items-center overflow-hidden">
-      <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/4d9g2LnpIbY4J5VD/scene.splinecode" style={{ width: '100%', height: '100%' }} />
-      </div>
-
-      <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-white/40 to-white pointer-events-none" />
+    <section className="relative min-h-[70vh] grid place-items-center overflow-hidden bg-gradient-to-b from-amber-50 via-white to-white">
+      {/* Decorative glow blobs (no external assets) */}
+      <div className="pointer-events-none absolute -top-24 -left-16 h-72 w-72 rounded-full bg-amber-200 blur-3xl opacity-50" />
+      <div className="pointer-events-none absolute -bottom-32 -right-16 h-80 w-80 rounded-full bg-rose-200 blur-3xl opacity-50" />
 
       <div className="relative z-10 mx-auto max-w-5xl px-6 py-24 text-center">
         <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
